@@ -1,4 +1,5 @@
 // loog in js 
+
 document.getElementById('loogin-button').addEventListener('click', function(){
     const accountInput = document.getElementById('account-input');
     const accountValue = accountInput.value;
@@ -10,4 +11,6 @@ document.getElementById('loogin-button').addEventListener('click', function(){
     else{
         alert('Input Account = Account, and password = password')
     }
+    accountInput.value = '';
+    passwordInput.value = '';
 });
