@@ -5,7 +5,7 @@
 document.getElementById('deposit-button').addEventListener('click', function(){
     const newDepositText = document.getElementById('diposit-input');
     const newDeposit = parseFloat(newDepositText.value);
-
+    
     const prevDepositValueText = document.getElementById('deposit-value');
     const  prevDepositValue = parseFloat(prevDepositValueText.innerText);
 
@@ -39,4 +39,9 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
     const totalAccount = accountValueText.innerText = totaAccountValue;
 
     withdrawInputText.value = '';
+});
+
+// go back 
+document.getElementById('go-back').addEventListener('click', function(){
+    window.location.href = 'index.html';
 });
